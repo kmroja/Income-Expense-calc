@@ -1,0 +1,276 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #12101c;
+  color: white;
+  overflow-x: hidden;
+  overflow-y:hidden; 
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+
+.image-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.calculator {
+  flex: 1;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #1a1a40, #2c2c54);
+  border-left: 4px solid #2f2f48;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #f7f7f7;
+  text-shadow: 1px 1px 3px #000;
+}
+
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.summary div {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #212133;
+  box-shadow: 0 0 10px #00000033;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summary div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px #00000055;
+}
+
+#income {
+  color: #00ffae;
+}
+
+#expense {
+  color: #ff4d6d;
+}
+
+#balance {
+  color: #51e2f5;
+}
+
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.input-section input[type="text"],
+.input-section input[type="number"] {
+  padding: 0.6rem;
+  background: #2a2848;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 8px;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.input-section input:focus {
+  box-shadow: 0 0 8px #9575cd;
+}
+
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0;
+  color: #ccc;
+}
+
+.radio-group input {
+  accent-color: #6c63ff;
+}
+
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.6rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#add-btn {
+  background-color: #7c4dff;
+  color: white;
+  flex: 1;
+}
+
+#add-btn:hover {
+  background-color: #9575cd;
+  transform: scale(1.03);
+}
+
+.reset {
+  background-color: #d50000;
+  color: white;
+  flex: 1;
+}
+
+.reset:hover {
+  background-color: #ff5252;
+  transform: scale(1.03);
+}
+
+
+.filter {
+  margin: 1rem 0;
+  text-align: center;
+  color: #bbb;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #242140;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: center;
+  border-bottom: 1px solid #3e3a64;
+  transition: background 0.2s ease;
+}
+
+tr:hover {
+  background-color: #2e2b50;
+}
+
+th {
+  background-color: #1e1c39;
+  color: #f2f2f2;
+}
+
+td i {
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+td i:hover {
+  transform: scale(1.2);
+}
+
+
+.edit-btn {
+  color: #00e5ff;
+}
+
+.edit-btn:hover {
+  color: #64ffda;
+}
+
+.delete-btn {
+  color: #ff1744;
+}
+
+.delete-btn:hover {
+  color: #ff8a80;
+}
+
+
+td.income {
+  color: #00ffae;
+  font-weight: bold;
+}
+
+td.expense {
+  color: #ff4d6d;
+  font-weight: bold;
+}
+.summary {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.summary-box {
+  flex: 1;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: default;
+}
+
+
+#income {
+  background-color: #00e676;
+  color: #000000;
+}
+
+#expense {
+  background-color: #ff1744;
+  color: #fff;
+}
+
+#balance {
+  background-color: #29b6f6;
+  color: #000;
+}
+
+#income:hover {
+  background-color: #00c853;
+  box-shadow: 0 0 20px #00ff8a;
+  transform: scale(1.05);
+}
+
+#expense:hover {
+  background-color: #d50000;
+  box-shadow: 0 0 20px #ff4d6d;
+  transform: scale(1.05);
+}
+
+#balance:hover {
+  background-color: #0288d1;
+  box-shadow: 0 0 20px #51e2f5;
+  transform: scale(1.05);
+}
